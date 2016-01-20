@@ -26,7 +26,17 @@ var pigLatin = function(word) {
     //     return wordFront;
     // }
 
+var pigSentences = function(sentence){
+  words = sentences.split("");
 
+  var index = 0;
+  var text = "";
+
+  while (words[index]) {
+    
+  }
+
+};
 
 
 

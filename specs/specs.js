@@ -8,7 +8,11 @@ describe("pigLatin", function() {
   });
 });
 
-
+describe("pigSentence", function() {
+  it("successfully translate more than one word at a time", function() {
+    expect(pigSentence("hello good friend")).to.equal("ellohay oodgay iendfray");
+  });
+})
 // it("returns an array of the letters of a given word", function() {
 //   expect(makeArray("happy")).to.eql([ "h", "a", "p", "p", "y" ]);
 // });
