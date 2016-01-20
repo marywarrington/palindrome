@@ -1,10 +1,18 @@
-var pigLatin = function(word) {
+var isVowel = function(letter) {
   var vowels = ["a", "e", "i", "o", "u"];
-  if (vowels.includes(word[0])) {
+  if (vowels.includes(letter[0])) {
     return true;
   } else {
     return false;
   }
+};
+
+var pigLatin = function(word) {
+    if (isVowel(word)) {
+      return (word + "ay");
+    } else {
+      return ((word.substring(1,word.length)) + (word.substring(0,1)) + ("ay"));
+    }
 };
 
 
