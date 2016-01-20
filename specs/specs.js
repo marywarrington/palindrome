@@ -14,7 +14,16 @@ describe("pigLatin", function() {
   it("removes first letter and appends it to the end of the word, along with 'ay'", function(){
     expect(pigLatin("bus")).to.equal("usbay");
   });
-  it("returns true for a word beginning with two consonants", function() {
-    expect(pigLatin("train")).to.equal(true);
+  it("removes first two letters and appends them to the end of the word, along with 'ay'", function(){
+    expect(pigLatin("train")).to.equal("aintray");
+  });
+  it("removes first three letters and appends them to the end of the word, along with 'ay'", function(){
+    expect(pigLatin("three")).to.equal("eethray");
+  });
+  it("removes first four letters and appends them to the end of the word, along with 'ay'", function(){
+    expect(pigLatin("mystery")).to.equal("erymystay");
+  });
+  it("removes first five letters and appends them to the end of the word, along with 'ay'", function(){
+    expect(pigLatin("bcdfgein")).to.equal("einbcdfgay");
   });
 });
