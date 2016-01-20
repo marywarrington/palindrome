@@ -27,16 +27,19 @@ var pigLatin = function(word) {
     // }
 
 var pigSentences = function(sentence){
-  words = sentences.split("");
+  var words = sentence.split(' ');
+  var text = [];
 
-  var index = 0;
-  var text = "";
-
-  while (words[index]) {
-    
-  }
-
+  words.forEach(function(word) {
+    text.push(pigLatin(word));
+  });
+  return text.toString().replace(/,/g, " ");
 };
+  // for(index = 0; index < words.length; index ++) {
+  //   text.push(pigLatin(words));
+  // }
+//   return text;
+// };
 
 
 

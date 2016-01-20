@@ -8,9 +8,9 @@ describe("pigLatin", function() {
   });
 });
 
-describe("pigSentence", function() {
-  it("successfully translate more than one word at a time", function() {
-    expect(pigSentence("hello good friend")).to.equal("ellohay oodgay iendfray");
+describe("pigSentences", function() {
+  it("successfully translate one word at a time", function() {
+    expect(pigSentences("hello good friend")).to.equal("ellohay oodgay iendfray");
   });
 })
 // it("returns an array of the letters of a given word", function() {
