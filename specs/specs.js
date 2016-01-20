@@ -1,9 +1,18 @@
 
-describe("makeArray", function() {
-  it("returns an array of the letters of a given word", function() {
-    expect(makeArray("happy")).to.eql([ "h", "a", "p", "p", "y" ]);
+describe("pigLatin", function() {
+  it("adds 'ay' to the end of a word that starts with a vowel", function () {
+    expect(pigLatin("epicenter")).to.equal("epicenteray");
+  });
+  it("slices any consonants at the beginning of the word, and returns them at the end of the word + 'ay'", function() {
+    expect(pigLatin("plants")).to.equal("antsplay");
   });
 });
+
+
+// it("returns an array of the letters of a given word", function() {
+//   expect(makeArray("happy")).to.eql([ "h", "a", "p", "p", "y" ]);
+// });
+
 
 // describe("isVowel",function() {
 //   it("returns true for a word beginning with a vowel", function() {
