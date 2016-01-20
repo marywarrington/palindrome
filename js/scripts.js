@@ -1,6 +1,6 @@
-var isVowel = function(letter) {
+var isVowel = function(word) {
   var vowels = ["a", "e", "i", "o", "u"];
-  if (vowels.includes(letter[0])) {
+  if (vowels.includes(word[0])) {
     return true;
   } else {
     return false;
@@ -25,10 +25,10 @@ var pigLatin = function(word) {
     }
 };
 
-
+//
 // for (var i = 0;i < word.length; i++) {
-//   letter = word[i]
-//   for (var j = 0;i < vowels.length;j++) {
+//   letter = word[i];
+//   for (var j = 0;j < vowels.length;j++) {
 //     if (letter === vowels[j]) {
 //       return word.slice(i,word.length) + word.slice(0,i) + "ay";
 //     }
